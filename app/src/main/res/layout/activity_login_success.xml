@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/background"
+        tools:context="cn.cnu.smartbook.androidUI.LoginSuccessActivity">
+
+    <cn.cnu.smartbook.androidUI.SlideMenu.SlideMenu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/slideMenu">
+        <!-- 菜单界面的布局 -->
+        <include layout="@layout/layout_menu"
+                android:id="@+id/menu"/>
+
+
+        <!-- 主界面的布局  -->
+      <include layout="@layout/layout_main"/>
+
+    </cn.cnu.smartbook.androidUI.SlideMenu.SlideMenu>
+</RelativeLayout>
